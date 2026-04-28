@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Joako - Programador</title>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Single&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+
+    <div class="nav-container">
+        <a href="#" class="logo">Joako</a>
+        
+        <ul class="nav-menu">
+            <li><a href="#dia-a-dia">Día a Día</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#progreso">Estudios</a></li>
+            <li><a href="#python-section">Python</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Prácticas CSS ▼</a>
+                <div class="dropdown-content">
+                    <a href="#practicas">Todas las Prácticas</a>
+                    <a href="#overflow">Overflow</a>
+                    <a href="#opacity">Opacity</a>
+                    
+                    <a href="#galeria">Image Gallery</a>
+                    <a href="#vertical-navbar">Vertical Navbar</a>
+                    <a href="#attribute-selectors">Attribute Selectors</a>
+                    <a href="#important">CSS !important</a>
+                    <a href="#math-units">Math Functions y Units</a>
+                    <a href="#mejora-de-layout">Mejora de Layout</a>
+                    <a href="#transitions">Transitions, Animations y Optimización Final</a>
+                </div>
+            </li>
+            
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class="contenedor">
+<header>
+<div class="sub-header">
+    <p>Estudiante de Programación</p>
+</div>
+</header> 
+ <h2 id="dia-a-dia">Mi dia a dia</h2>
+ <div class="dia-a-dia">
+    <div class="texto-dia">
+       <p>Cada dia que me meto en la computadora siempre trato de nutrirme de conocimeinto sobre este mundo de la programacion, y ahora que tuve el animo y la seguridad de empezar siento que eh hecho un gran avance hacia lo que estoy aprendiendo ya que con este conocimiento pude poner en practica para empezar este proyecto</p> 
+    </div>
+<div class="imagen-dia">
+    <div class="setup-img-container">
+    <img src="computadora.jpeg" alt="Mi Setup de estudio" width="600" class="setup-img">
+    <span class="etiqueta">Mi Setup de Estudio</span>
+</div>
+</div>
+</div>  
+
+
+ <h2>Proyectos que hice:</h2>
+ <ul>
+    <li>Esta Pagina (Html con agregado de CSS)</li>
+ </ul>
+ 
+ <h2 id="habilidades">Mis Habilidades</h2>
+ <ul>
+    <li>Resolución de problemas lógicos</li>
+    <li>Aprendizaje rapido de nuevas tecnologias</li>
+ </ul>
+
+<h2 id="progreso">Mis Estudios y Progresos</h2>
+
+<table id="tabla-progreso">
+    <thead>
+        <tr>
+            <th>Curso / Tema</th>
+            <th>Estado</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HTML</td>
+            <td>Completado</td>
+            <td>Abril 2026</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Completado</td>
+            <td>Abril 2026</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>En Proceso (Bases)</td>
+            <td>Abril 2026</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="practicas">Practicas Avanzadas de CSS</h2>
+    <div class="practicas-container">
+        <div class="caja-zindex">
+            <h3>z-indez + Position</h3>
+            <p>Elemento con z-index alto</p>
+        </div>
+
+        <div class="caja-overflow">
+            <h3 id="overflow">Overflow, overflows-x y overflow-y</h3>
+            <p>En esta caja estoy probando las propiedades overflow. 
+        Aquí hay bastante texto para que aparezca la barra de scroll vertical. 
+        Puedo escribir todo lo que quiera y si el contenido es más alto que la caja, 
+        aparecerá el scroll gracias a overflow: auto. 
+        Esto es muy útil cuando quiero mostrar mucho texto sin que la página se haga demasiado larga. 
+        También puedo controlar el scroll horizontal con overflow-x y el vertical con overflow-y.
+        Prueba achicar y agrandar la ventana para ver cómo se comporta.</p>
+        </div>
+
+        <div class="caja-float">
+            <h3>Text-align (horizontal) y Vertical-align</h3>
+            <div class="text-left">Este texto está alineado a la izquierda (por defecto)</div>
+        </div>
+        <div class="text-center">Texto centrado horizontalmente con text align:center</div>
+        <div class="text-right">Texto alineado a la derecha con text-align: right</div>
+         
+        <div class="caja-pseudo">
+            <h3>Combinator, Pseudo-classes y Pseudo-elements</h3>
+            <ul>
+                <li>Primer ítem (first-child)</li>
+                <li>segundo item (hover)</li>
+                <li>tercer ítem (last-child)</li>
+            </ul>
+            <p>Este párrafo tiene ::before y ::after</p>
+        </div>
+        <div class="caja-opacity">
+            <h3 id="opacity">Opacity</h3>
+            <img src="computadora.jpeg" alt="Imagen con opacity" class="img-opacity">
+        </div>
+    </div>
+
+<h2 id="galeria">Galería de Imágenes</h2>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="computadora.jpeg" alt="Mi Setup de Estudio">
+        <p>Mi Setup Actual</p>
+    </div>
+    
+    <div class="gallery-item">
+        <img src="estudiante.jpg"alt="Proyecto 1">
+        <p>Proyecto Futuro 1</p>
+    </div>
+    
+    <div class="gallery-item">
+        <img src="trabajador.jpg" alt="Proyecto 2">
+        <p>Proyecto Futuro 2</p>
+    </div>
+</div>
+<h2 id="vertical-navbar">Vertical Navbar (Ejemplo)</h2>
+
+<div class="vertical-nav-container">
+    <nav class="vertical-navbar">
+        <a href="#dia-a-dia" class="vertical-link">🏠 Mi Día a Día</a>
+        <a href="#habilidades" class="vertical-link">🛠 Habilidades</a>
+        <a href="#progreso" class="vertical-link">📚 Mis Estudios</a>
+        <a href="#galeria" class="vertical-link">🖼 Galería</a>
+        <a href="#practicas" class="vertical-link">⚡ Prácticas CSS</a>
+        <a href="#contacto" class="vertical-link">✉️ Contacto</a>
+    </nav>
+</div>
+<h2 id="attribute-selectors">Attribute Selectors</h2>
+
+<div class="attribute-example">
+    <h3>Ejemplos de Attribute Selectors</h3>
+    
+    <p><strong>[target="_blank"]</strong> → Link que se abre en nueva pestaña</p>
+    <a href="https://www.w3schools.com" target="_blank" class="attr-link">Ir a W3Schools</a>
+    
+    <p><strong>[href^="https"]</strong> → Links que empiezan con https</p>
+    <a href="https://github.com" class="attr-link">GitHub</a>
+    
+    <p><strong>[class*="box"]</strong> → Elementos que contienen "box" en la clase</p>
+    <div class="red-box">Caja Roja</div>
+    <div class="blue-box">Caja Azul</div>
+    
+    <p><strong>[disabled]</strong> → Elementos deshabilitados</p>
+    <button disabled>Botón Deshabilitado</button>
+</div>
+
+<h2 id="important">CSS !important</h2>
+
+<div class="important-example">
+    <h3>Ejemplo de !important</h3>
+    
+    <p class="texto-normal">Este párrafo tiene color normal (azul).</p>
+    
+    <p class="texto-con-importante">Este párrafo tiene !important (rojo fuerte).</p>
+    
+    <button class="btn-normal">Botón Normal</button>
+    <button class="btn-importante">Botón con !important</button>
+</div>
+
+<h2 id="math-units">Math Functions y Units</h2>
+
+<div class="math-units-container">
+    <h3>CSS Math Functions + Units</h3>
+    
+    <div class="math-box">
+        <h4>Usando calc()</h4>
+        <p class="calc-example">Este párrafo tiene un ancho calculado con calc(100% - 40px)</p>
+        
+        <h4>Usando clamp() - Súper útil para responsive</h4>
+        <p class="clamp-example">Este texto usa clamp() para cambiar de tamaño automáticamente</p>
+    </div>
+
+    <div class="units-example">
+        <h4>Ejemplos de Units</h4>
+        <p class="unit-rem">Texto con tamaño en <strong>rem</strong> (recomendado)</p>
+        <p class="unit-vh">Texto con altura relativa a la pantalla (<strong>vh</strong>)</p>
+        <p class="unit-percent">Esto ocupa el 80% del contenedor</p>
+    </div>
+</div>
+
+<h2 id="counters-layout">CSS Counters y Mejora de Layout</h2>
+
+<div class="counters-layout-container">
+
+    <!-- CSS Counters -->
+    <div class="counters-section">
+        <h3>CSS Counters (Contadores automáticos)</h3>
+        <ol class="custom-counter">
+            <li>HTML Completo</li>
+            <li>CSS Básico</li>
+            <li>Flexbox y Position</li>
+            <li>Navbar y Dropdown</li>
+            <li>Formularios y Gallery</li>
+            <li>Math Functions y Units</li>
+        </ol>
+    </div>
+
+    <div class="layout-section">
+        <h3 id="mejora-de-layout">Mejora de Layout (CSS Grid)</h3>
+        <div class="advanced-grid">
+            <div class="grid-item item1">Mi Día a Día</div>
+            <div class="grid-item item2">Habilidades</div>
+            <div class="grid-item item3">Estudios</div>
+            <div class="grid-item item4">Galería</div>
+            <div class="grid-item item5">Contacto</div>
+        </div>
+    </div>
+
+</div>
+
+<h2 id="transitions">Transitions, Animations y Optimización Final</h2>
+
+<div class="final-section">
+
+    <!-- Transitions y Animations -->
+    <div class="transitions-box">
+        <h3>CSS Transitions & Animations</h3>
+        
+        <button class="btn-transition">Hover me (Transition)</button>
+        
+        <div class="animated-box">
+            <p>Este cuadro tiene una animación suave</p>
+        </div>
+    </div>
+
+    <!-- Optimización y Accessibility -->
+    <div class="optimization-box">
+        <h3>Optimización y Accesibilidad</h3>
+        <ul>
+            <li>✅ Uso correcto de semantic HTML</li>
+            <li>✅ Contraste de colores adecuado</li>
+            <li>✅ Enlaces con hover claros</li>
+            <li>✅ Smooth scroll implementado</li>
+            <li>✅ Estructura limpia con contenedores</li>
+        </ul>
+    </div>
+
+</div>
+
+<h2 id="python-section">Aprendizaje de Python</h2>
+<div class="python-container">
+    
+    <div class="python-card">
+        <h3>Sintaxis y Output</h3>
+        <p>Aprendí a usar <code>print()</code> para mostrar texto y números, y la importancia de la indentación en Python.</p>
+        <pre><code>print("Hola Mundo")
+print(15 + 4)</code></pre>
+    </div>
+
+    <div class="python-card">
+        <h3>Variables y Tipos de Datos</h3>
+        <p>Manejo de nombres de variables (snake_case), asignación múltiple y tipos básicos como <code>int</code>, <code>float</code> y <code>str</code>.</p>
+    </div>
+
+    <div class="python-card">
+        <h3>Lógica y Operadores</h3>
+        <p>Uso de booleanos (True/False) y operadores lógicos (<code>and</code>, <code>or</code>, <code>not</code>) y de membresía (<code>in</code>).</p>
+        <div class="tags">
+            <span>Aritméticos</span>
+            <span>Comparación</span>
+            <span>Identidad</span>
+        </div>
+    </div>
+
+    <div class="python-card">
+        <h3>Métodos de Strings</h3>
+        <p>Manipulación de texto con <code>slicing</code>, f-strings y métodos como <code>upper()</code> y <code>strip()</code>.</p>
+    </div>
+
+    <div class="python-card">
+        <h3>Booleans & Operators</h3>
+        <p>Manejo de valores True/False y tipos de operadores: Aritméticos, Asignación, Comparación, Lógicos e Identidad.</p>
+        <div class="tags">
+            <span>Precedencia</span>
+            <span>Lógica</span>
+        </div>
+    </div>
+
+    <div class="python-card">
+        <h3>Data Structures</h3>
+        <p>Gestión de datos agrupados:</p>
+        <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
+            <li><strong>Lists:</strong> Mutables y ordenadas.</li>
+            <li><strong>Tuples:</strong> Inmutables (Unpacking).</li>
+            <li><strong>Sets:</strong> Elementos únicos.</li>
+            <li><strong>Dictionaries:</strong> Pares clave-valor.</li>
+        </ul>
+    </div>
+
+    <div class="python-card">
+        <h3>Control de Flujo</h3>
+        <p>Toma de decisiones y repeticiones:</p>
+        <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
+            <li><strong>Condicionales:</strong> if, elif, else y Match.</li>
+            <li><strong>Bucles:</strong> while y for con range().</li>
+        </ul>
+    </div>
+
+    <div class="python-card">
+        <h3>Functions & Advanced</h3>
+        <p>Lógica profesional: <code>*args</code>, <code>**kwargs</code>, Scope, Decoradores, Lambdas y Generadores.</p>
+    </div>
+
+    <div class="python-card">
+        <h3>Arrays y Listas</h3>
+        <p>Uso de listas para almacenar múltiples valores y manipulación avanzada mediante índices y métodos.</p>
+    </div>
+
+</div>
+
+<h2 id="contacto">Contacto</h2>
+
+<form class="form-contacto" id="form-contacto">
+    
+    <div class="form-grupo">
+        <label for="nombre">Tu Nombre</label>
+        <div class="input-wrapper">
+            <span class="icon">👤</span>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+        </div>
+    </div>
+
+    <div class="form-grupo">
+        <label for="email">Tu Email</label>
+        <div class="input-wrapper">
+            <span class="icon">✉️</span>
+            <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+        </div>
+    </div>
+
+    <div class="form-grupo">
+        <label for="mensaje">Mensaje</label>
+        <div class="input-wrapper">
+            <span class="icon">💬</span>
+            <textarea id="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+    </div>
+
+    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+</form>
+    <p>© 2026 Joako - Estudiante de programación</p>
+</footer>
+</div>
+</body>
+</html>
