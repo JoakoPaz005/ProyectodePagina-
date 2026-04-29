@@ -681,7 +681,7 @@ html {
     max-width: 900px;
     margin: 40px auto;
     padding: 25px;
-    background-color: #f8fbff;
+    background-color: #1078ff;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
@@ -1041,4 +1041,75 @@ button[disabled] {
 
 .python-card li strong {
     color: #00d4fe; 
+}
+
+.python-grid {
+    display: grid;
+    /* Esto es clave: Crea columnas de al menos 300px. 
+       Si no entran 3, pone 2, pero nunca las hace más delgadas de 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px;
+    padding: 20px;
+    width: 100%; /* Que ocupe todo el ancho disponible */
+    max-width: 1200px; /* Evita que en pantallas 4K se estiren demasiado */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* 2. La Tarjeta: Forzamos el tamaño */
+.python-card {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-top: 8px solid #92c954;
+    border-radius: 4px;
+    padding: 25px;
+    
+    /* Forzamos una altura mínima para que no queden chatos */
+    min-height: 320px; 
+    
+    /* Aseguramos que NO tengan un ancho máximo pequeño heredado */
+    max-width: none !important; 
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* Tu fuente personalizada */
+    font-family: 'Bitcount Single', sans-serif !important;
+    box-sizing: border-box;
+}
+
+/* 3. Textos: Aseguramos que el contenido no achique el cuadro */
+.python-card h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #2c3e50;
+    font-family: 'Bitcount Single', sans-serif !important;
+}
+
+.python-card p {
+    color: #000000 !important;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Bitcount Single', sans-serif !important;
+}
+
+/* 4. Etiquetas/Botones */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.btn-tag {
+    background-color: #3776ab;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
 }
